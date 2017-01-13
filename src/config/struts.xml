@@ -16,5 +16,9 @@
         <action name="love" class="loveAction" method="execute">
             <result name="success">/WEB-INF/views/love.jsp</result>
         </action>
+        <action name="input" class="loveAction" method="add">
+            <result name="input">/WEB-INF/views/success.jsp</result>
+            <result name="info">/WEB-INF/views/success.jsp</result>
+        </action>
     </package>
 </struts>
