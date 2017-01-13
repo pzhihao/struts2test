@@ -31,8 +31,10 @@
         <property name="sessionFactory" ref="sessionFactory"></property>
     </bean>
 
+
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
+    <!--申明式事务-->
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
             <tx:method name="get*" read-only="true"/>
